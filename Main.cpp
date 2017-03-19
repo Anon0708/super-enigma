@@ -30,7 +30,7 @@ BOOL APIENTRY DllMain(HMODULE, DWORD ul_reason_for_call, LPVOID lpReserverd)				
 	switch (ul_reason_for_call)
 	{
 	case DLL_PROCESS_ATTACH:
-		PlaceJMP((BYTE*)Cave.start, (DWORD)CC_ExtractScore, 9);								//Funktion die Aufgerufen wird wenn DLL attached ist
+		PlaceJMP((BYTE*)Cave.start, (DWORD)CC_ExtractScore, 9);			
 	}
 	return TRUE;
 }
